@@ -10,9 +10,9 @@
   }
   
   body {
-    @apply bg-astro-bg text-astro-text-primary antialiased;
-    background-image: radial-gradient(ellipse at top, #bc52ee1a 0%, transparent 50%),
-                      radial-gradient(ellipse at bottom, #3245ff1a 0%, transparent 50%);
+    @apply text-white antialiased;
+    background: #060913;
+    min-height: 100vh;
   }
   
   /* Custom scrollbar for Astro theme */

@@ -12,9 +12,9 @@ import '../styles/global.css';
 	
 	<main class="min-h-screen">
 		<!-- Hero Section -->
-		<section class="bg-astro-hero py-32 relative overflow-hidden">
-			<div class="absolute inset-0 bg-astro-stardust"></div>
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-astro-bg/20"></div>
+		<section class="py-32 min-h-screen flex items-center relative" style="background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 35%, #2563eb 100%);">
+			<!-- Difuminado suave hacia #060913 -->
+			<div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#060913]"></div>
 			
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div class="text-center">
@@ -24,16 +24,14 @@ import '../styles/global.css';
 						</span>
 					</div>
 					
-					<h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-astro-text-primary mb-8">
-						<span class="bg-gradient-to-r from-astro-blue to-astro-purple bg-clip-text text-transparent">
-							Ecomerciante
-						</span>
+					<h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8">
+						Ecomerciante
 					</h1>
 					
-					<p class="text-2xl md:text-3xl text-astro-text-secondary mb-4 max-w-4xl mx-auto font-light">
+					<p class="text-2xl md:text-3xl text-gray-300 mb-4 max-w-4xl mx-auto font-light">
 						Tu tienda online profesional
 					</p>
-					<p class="text-xl text-astro-text-muted mb-12 max-w-3xl mx-auto">
+					<p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
 						Lista para vender en 24 horas • Soporte técnico incluido • Sin comisiones ocultas
 					</p>
 					
@@ -56,17 +54,17 @@ import '../styles/global.css';
 					
 					<!-- Key Benefits -->
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-astro-surface/50 border border-astro-border rounded-lg backdrop-blur-sm">
+						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 border border-white/20 rounded-lg backdrop-blur-sm">
 							<span class="text-2xl">⏱️</span>
-							<span class="text-astro-text-primary font-medium">24 horas listo</span>
+							<span class="text-white font-medium">24 horas listo</span>
 						</div>
-						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-astro-surface/50 border border-astro-border rounded-lg backdrop-blur-sm">
+						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 border border-white/20 rounded-lg backdrop-blur-sm">
 							<span class="text-2xl">🛠️</span>
-							<span class="text-astro-text-primary font-medium">Soporte incluido</span>
+							<span class="text-white font-medium">Soporte incluido</span>
 						</div>
-						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-astro-surface/50 border border-astro-border rounded-lg backdrop-blur-sm">
+						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 border border-white/20 rounded-lg backdrop-blur-sm">
 							<span class="text-2xl">💳</span>
-							<span class="text-astro-text-primary font-medium">Pagos integrados</span>
+							<span class="text-white font-medium">Pagos integrados</span>
 						</div>
 					</div>
 				</div>
@@ -74,49 +72,49 @@ import '../styles/global.css';
 		</section>
 
 		<!-- Problema que Resolvemos -->
-		<section class="py-24 bg-astro-bg relative">
+		<section class="py-24 -mt-16 pt-32">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						¿Te suena familiar?
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						Los emprendedores colombianos enfrentan estos problemas todos los días
 					</p>
 				</div>
 				
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<!-- Problema 1 -->
-					<div class="bg-astro-surface border border-astro-border rounded-xl p-8 hover:border-astro-purple/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-astro-purple/30 transition-all duration-300">
 						<div class="text-4xl mb-4">😤</div>
-						<h3 class="text-xl font-semibold text-astro-text-primary mb-4">
+						<h3 class="text-xl font-semibold text-white mb-4">
 							Crear tienda es complicado
 						</h3>
-						<p class="text-astro-text-secondary">
+						<p class="text-gray-300">
 							WordPress, Shopify, programadores... Todo toma meses y cuesta una fortuna. 
 							Solo quieres vender, no volverte programador.
 						</p>
 					</div>
 					
 					<!-- Problema 2 -->
-					<div class="bg-astro-surface border border-astro-border rounded-xl p-8 hover:border-astro-blue/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-astro-blue/30 transition-all duration-300">
 						<div class="text-4xl mb-4">💸</div>
-						<h3 class="text-xl font-semibold text-astro-text-primary mb-4">
+						<h3 class="text-xl font-semibold text-white mb-4">
 							Costos ocultos por todos lados
 						</h3>
-						<p class="text-astro-text-secondary">
+						<p class="text-gray-300">
 							Comisiones del 5-8%, hosting, dominios, plugins... Al final pagas más 
 							que lo que vendes. Tu margen se evapora.
 						</p>
 					</div>
 					
 					<!-- Problema 3 -->
-					<div class="bg-astro-surface border border-astro-border rounded-xl p-8 hover:border-astro-purple/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-astro-purple/30 transition-all duration-300">
 						<div class="text-4xl mb-4">🤯</div>
-						<h3 class="text-xl font-semibold text-astro-text-primary mb-4">
+						<h3 class="text-xl font-semibold text-white mb-4">
 							Soporte técnico inexistente
 						</h3>
-						<p class="text-astro-text-secondary">
+						<p class="text-gray-300">
 							Cuando algo se daña, estás solo. Los "expertos" cobran por cada pregunta.
 							Tu tienda offline = ventas perdidas.
 						</p>
@@ -134,13 +132,13 @@ import '../styles/global.css';
 		</section>
 
 		<!-- Nuestra Solución -->
-		<section class="py-24 stardust relative">
+		<section class="py-24">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						Nuestra solución es diferente
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						Creamos tu tienda profesional en 24 horas con todo incluido
 					</p>
 				</div>
@@ -153,10 +151,10 @@ import '../styles/global.css';
 								<span class="text-white text-xl">⚡</span>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold text-astro-text-primary mb-2">
+								<h3 class="text-xl font-semibold text-white mb-2">
 									24 horas, no 3 meses
 								</h3>
-								<p class="text-astro-text-secondary">
+								<p class="text-gray-300">
 									Mientras otros te hacen esperar meses, nosotros entregamos tu tienda 
 									completamente funcional en máximo 24 horas.
 								</p>
@@ -168,10 +166,10 @@ import '../styles/global.css';
 								<span class="text-white text-xl">💰</span>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold text-astro-text-primary mb-2">
+								<h3 class="text-xl font-semibold text-white mb-2">
 									Sin comisiones por venta
 								</h3>
-								<p class="text-astro-text-secondary">
+								<p class="text-gray-300">
 									Solo pagas una cuota mensual fija. Todo lo que vendas es 100% tuyo. 
 									Sin sorpresas ni comisiones escondidas.
 								</p>
@@ -183,10 +181,10 @@ import '../styles/global.css';
 								<span class="text-white text-xl">🛠️</span>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold text-astro-text-primary mb-2">
+								<h3 class="text-xl font-semibold text-white mb-2">
 									Soporte técnico real
 								</h3>
-								<p class="text-astro-text-secondary">
+								<p class="text-gray-300">
 									WhatsApp directo con nuestro equipo. Respuesta garantizada en menos de 2 horas.
 									Tu tienda nunca estará sola.
 								</p>
@@ -198,10 +196,10 @@ import '../styles/global.css';
 								<span class="text-white text-xl">🎨</span>
 							</div>
 							<div>
-								<h3 class="text-xl font-semibold text-astro-text-primary mb-2">
+								<h3 class="text-xl font-semibold text-white mb-2">
 									Diseño profesional garantizado
 								</h3>
-								<p class="text-astro-text-secondary">
+								<p class="text-gray-300">
 									Nada de templates genéricos. Cada tienda se diseña específicamente 
 									para tu marca y productos.
 								</p>
@@ -210,47 +208,47 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Comparación visual -->
-					<div class="bg-astro-surface border border-astro-border rounded-2xl p-8">
-						<h3 class="text-2xl font-bold text-astro-text-primary mb-8 text-center">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8">
+						<h3 class="text-2xl font-bold text-white mb-8 text-center">
 							Otros vs. Ecomerciante
 						</h3>
 						
 						<div class="space-y-6">
 							<!-- Tiempo -->
-							<div class="flex justify-between items-center py-4 border-b border-astro-border">
+							<div class="flex justify-between items-center py-4 border-b border-white/20">
 								<div>
-									<div class="text-astro-text-secondary text-sm">Otros</div>
+									<div class="text-gray-300 text-sm">Otros</div>
 									<div class="text-red-400">3-6 meses</div>
 								</div>
-								<div class="text-astro-text-muted">vs</div>
+								<div class="text-gray-400">vs</div>
 								<div class="text-right">
-									<div class="text-astro-text-secondary text-sm">Ecomerciante</div>
+									<div class="text-gray-300 text-sm">Ecomerciante</div>
 									<div class="text-astro-cyan font-bold">24 horas</div>
 								</div>
 							</div>
 							
 							<!-- Costo -->
-							<div class="flex justify-between items-center py-4 border-b border-astro-border">
+							<div class="flex justify-between items-center py-4 border-b border-white/20">
 								<div>
-									<div class="text-astro-text-secondary text-sm">Otros</div>
+									<div class="text-gray-300 text-sm">Otros</div>
 									<div class="text-red-400">$2M+ COP inicial</div>
 								</div>
-								<div class="text-astro-text-muted">vs</div>
+								<div class="text-gray-400">vs</div>
 								<div class="text-right">
-									<div class="text-astro-text-secondary text-sm">Ecomerciante</div>
+									<div class="text-gray-300 text-sm">Ecomerciante</div>
 									<div class="text-astro-cyan font-bold">Desde $120k/mes</div>
 								</div>
 							</div>
 							
 							<!-- Comisiones -->
-							<div class="flex justify-between items-center py-4 border-b border-astro-border">
+							<div class="flex justify-between items-center py-4 border-b border-white/20">
 								<div>
-									<div class="text-astro-text-secondary text-sm">Otros</div>
+									<div class="text-gray-300 text-sm">Otros</div>
 									<div class="text-red-400">5-8% por venta</div>
 								</div>
-								<div class="text-astro-text-muted">vs</div>
+								<div class="text-gray-400">vs</div>
 								<div class="text-right">
-									<div class="text-astro-text-secondary text-sm">Ecomerciante</div>
+									<div class="text-gray-300 text-sm">Ecomerciante</div>
 									<div class="text-astro-cyan font-bold">0% comisión</div>
 								</div>
 							</div>
@@ -258,12 +256,12 @@ import '../styles/global.css';
 							<!-- Soporte -->
 							<div class="flex justify-between items-center py-4">
 								<div>
-									<div class="text-astro-text-secondary text-sm">Otros</div>
+									<div class="text-gray-300 text-sm">Otros</div>
 									<div class="text-red-400">Email en 1-3 días</div>
 								</div>
-								<div class="text-astro-text-muted">vs</div>
+								<div class="text-gray-400">vs</div>
 								<div class="text-right">
-									<div class="text-astro-text-secondary text-sm">Ecomerciante</div>
+									<div class="text-gray-300 text-sm">Ecomerciante</div>
 									<div class="text-astro-cyan font-bold">WhatsApp &lt;2h</div>
 								</div>
 							</div>
@@ -280,50 +278,50 @@ import '../styles/global.css';
 		</section>
 
 		<!-- Planes y Precios -->
-		<section id="planes" class="py-24 bg-astro-section relative">
+		<section id="planes" class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						Planes que se adaptan a ti
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						Sin comisiones por venta • Sin permanencia • Soporte incluido
 					</p>
 				</div>
 				
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
 					<!-- Plan Básico -->
-					<div class="bg-astro-surface border border-astro-border rounded-2xl p-8 hover:border-astro-blue/30 transition-all duration-300 relative">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 hover:border-astro-blue/30 transition-all duration-300 relative">
 						<div class="mb-8">
-							<h3 class="text-2xl font-bold text-astro-text-primary mb-2">Básico</h3>
-							<p class="text-astro-text-secondary mb-4">Perfecto para empezar</p>
+							<h3 class="text-2xl font-bold text-white mb-2">Básico</h3>
+							<p class="text-gray-300 mb-4">Perfecto para empezar</p>
 							<div class="flex items-baseline gap-2">
-								<span class="text-4xl font-black text-astro-text-primary">$120k</span>
-								<span class="text-astro-text-muted">/mes</span>
+								<span class="text-4xl font-black text-white">$120k</span>
+								<span class="text-gray-400">/mes</span>
 							</div>
-							<p class="text-sm text-astro-text-muted mt-2">+ setup único $200k COP</p>
+							<p class="text-sm text-gray-400 mt-2">+ setup único $200k COP</p>
 						</div>
 						
 						<ul class="space-y-4 mb-8">
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Hasta 50 productos</span>
+								<span class="text-gray-300">Hasta 50 productos</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Diseño profesional</span>
+								<span class="text-gray-300">Diseño profesional</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Pagos integrados</span>
+								<span class="text-gray-300">Pagos integrados</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">WhatsApp soporte</span>
+								<span class="text-gray-300">WhatsApp soporte</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">SSL + hosting incluido</span>
+								<span class="text-gray-300">SSL + hosting incluido</span>
 							</li>
 						</ul>
 						
@@ -333,7 +331,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Plan Plus (Recomendado) -->
-					<div class="bg-astro-surface border-2 border-astro-purple rounded-2xl p-8 hover:border-astro-purple/50 transition-all duration-300 relative glow-purple transform scale-105">
+					<div class="bg-white/10 border-2 border-astro-purple rounded-2xl p-8 hover:border-astro-purple/50 transition-all duration-300 relative glow-purple transform scale-105">
 						<div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
 							<span class="bg-astro-primary text-white px-6 py-2 rounded-full text-sm font-bold">
 								Más Popular
@@ -341,39 +339,39 @@ import '../styles/global.css';
 						</div>
 						
 						<div class="mb-8">
-							<h3 class="text-2xl font-bold text-astro-text-primary mb-2">Plus</h3>
-							<p class="text-astro-text-secondary mb-4">Lo que necesitas para crecer</p>
+							<h3 class="text-2xl font-bold text-white mb-2">Plus</h3>
+							<p class="text-gray-300 mb-4">Lo que necesitas para crecer</p>
 							<div class="flex items-baseline gap-2">
-								<span class="text-4xl font-black text-astro-text-primary">$280k</span>
-								<span class="text-astro-text-muted">/mes</span>
+								<span class="text-4xl font-black text-white">$280k</span>
+								<span class="text-gray-400">/mes</span>
 							</div>
-							<p class="text-sm text-astro-text-muted mt-2">+ setup único $300k COP</p>
+							<p class="text-sm text-gray-400 mt-2">+ setup único $300k COP</p>
 						</div>
 						
 						<ul class="space-y-4 mb-8">
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-purple rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Productos ilimitados</span>
+								<span class="text-gray-300">Productos ilimitados</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-purple rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Todo del plan Básico</span>
+								<span class="text-gray-300">Todo del plan Básico</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-purple rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Marketing por email</span>
+								<span class="text-gray-300">Marketing por email</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-purple rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Analytics avanzados</span>
+								<span class="text-gray-300">Analytics avanzados</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-purple rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Cupones y descuentos</span>
+								<span class="text-gray-300">Cupones y descuentos</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-purple rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Inventario automático</span>
+								<span class="text-gray-300">Inventario automático</span>
 							</li>
 						</ul>
 						
@@ -383,40 +381,40 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Plan Personalizado -->
-					<div class="bg-astro-surface border border-astro-border rounded-2xl p-8 hover:border-astro-cyan/30 transition-all duration-300 relative">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 hover:border-astro-cyan/30 transition-all duration-300 relative">
 						<div class="mb-8">
-							<h3 class="text-2xl font-bold text-astro-text-primary mb-2">Personalizado</h3>
-							<p class="text-astro-text-secondary mb-4">Para empresas grandes</p>
+							<h3 class="text-2xl font-bold text-white mb-2">Personalizado</h3>
+							<p class="text-gray-300 mb-4">Para empresas grandes</p>
 							<div class="flex items-baseline gap-2">
-								<span class="text-4xl font-black text-astro-text-primary">Cotizar</span>
+								<span class="text-4xl font-black text-white">Cotizar</span>
 							</div>
-							<p class="text-sm text-astro-text-muted mt-2">Según tus necesidades</p>
+							<p class="text-sm text-gray-400 mt-2">Según tus necesidades</p>
 						</div>
 						
 						<ul class="space-y-4 mb-8">
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-cyan rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Todo del plan Plus</span>
+								<span class="text-gray-300">Todo del plan Plus</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-cyan rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Múltiples idiomas</span>
+								<span class="text-gray-300">Múltiples idiomas</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-cyan rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">API personalizada</span>
+								<span class="text-gray-300">API personalizada</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-cyan rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Integraciones ERP</span>
+								<span class="text-gray-300">Integraciones ERP</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-cyan rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Soporte prioritario</span>
+								<span class="text-gray-300">Soporte prioritario</span>
 							</li>
 							<li class="flex items-center gap-3">
 								<span class="w-5 h-5 bg-astro-cyan rounded-full flex items-center justify-center text-white text-xs">✓</span>
-								<span class="text-astro-text-secondary">Desarrollos a medida</span>
+								<span class="text-gray-300">Desarrollos a medida</span>
 							</li>
 						</ul>
 						
@@ -431,10 +429,10 @@ import '../styles/global.css';
 					<div class="inline-flex items-center px-8 py-4 bg-astro-primary/10 border border-astro-primary/20 rounded-2xl">
 						<span class="text-2xl mr-4">🛡️</span>
 						<div>
-							<div class="text-astro-text-primary font-bold text-lg mb-1">
+							<div class="text-white font-bold text-lg mb-1">
 								Garantía de 30 días
 							</div>
-							<div class="text-astro-text-secondary text-sm">
+							<div class="text-gray-300 text-sm">
 								Si no estás satisfecho, te devolvemos el 100% del dinero
 							</div>
 						</div>
@@ -444,13 +442,13 @@ import '../styles/global.css';
 		</section>
 
 		<!-- Cómo Funciona -->
-		<section id="como-funciona" class="py-24 stardust relative">
+		<section id="como-funciona" class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						Así de fácil es empezar
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						En solo 3 pasos tienes tu tienda online funcionando
 					</p>
 				</div>
@@ -465,15 +463,15 @@ import '../styles/global.css';
 							<!-- Línea conectora -->
 							<div class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-astro-purple to-astro-blue"></div>
 						</div>
-						<h3 class="text-2xl font-bold text-astro-text-primary mb-4">
+						<h3 class="text-2xl font-bold text-white mb-4">
 							Nos contactas
 						</h3>
-						<p class="text-astro-text-secondary mb-6">
+						<p class="text-gray-300 mb-6">
 							Envías un WhatsApp o llenas el formulario con tu información básica: 
 							qué vendes, colores preferidos y dominio que quieres.
 						</p>
-						<div class="bg-astro-surface border border-astro-border rounded-xl p-4">
-							<div class="text-sm text-astro-text-secondary">
+						<div class="bg-white/10 border border-white/20 rounded-xl p-4">
+							<div class="text-sm text-gray-300">
 								⏰ <strong>Tiempo:</strong> 5 minutos
 							</div>
 						</div>
@@ -488,15 +486,15 @@ import '../styles/global.css';
 							<!-- Línea conectora -->
 							<div class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-astro-blue to-astro-cyan"></div>
 						</div>
-						<h3 class="text-2xl font-bold text-astro-text-primary mb-4">
+						<h3 class="text-2xl font-bold text-white mb-4">
 							Nosotros creamos
 						</h3>
-						<p class="text-astro-text-secondary mb-6">
+						<p class="text-gray-300 mb-6">
 							Nuestro equipo diseña y programa tu tienda completa. 
 							Te enviamos previews para que apruebes antes de publicar.
 						</p>
-						<div class="bg-astro-surface border border-astro-border rounded-xl p-4">
-							<div class="text-sm text-astro-text-secondary">
+						<div class="bg-white/10 border border-white/20 rounded-xl p-4">
+							<div class="text-sm text-gray-300">
 								⏰ <strong>Tiempo:</strong> 12-24 horas
 							</div>
 						</div>
@@ -509,15 +507,15 @@ import '../styles/global.css';
 								<span class="text-3xl text-white font-bold">3</span>
 							</div>
 						</div>
-						<h3 class="text-2xl font-bold text-astro-text-primary mb-4">
+						<h3 class="text-2xl font-bold text-white mb-4">
 							Empiezas a vender
 						</h3>
-						<p class="text-astro-text-secondary mb-6">
+						<p class="text-gray-300 mb-6">
 							Recibís las credenciales de tu tienda, agregás productos y 
 							¡Ya estás vendiendo online! Con soporte para cualquier duda.
 						</p>
-						<div class="bg-astro-surface border border-astro-border rounded-xl p-4">
-							<div class="text-sm text-astro-text-secondary">
+						<div class="bg-white/10 border border-white/20 rounded-xl p-4">
+							<div class="text-sm text-gray-300">
 								⏰ <strong>Tiempo:</strong> Inmediato
 							</div>
 						</div>
@@ -526,20 +524,20 @@ import '../styles/global.css';
 				
 				<!-- Timeline visual -->
 				<div class="text-center mb-16">
-					<div class="inline-flex items-center gap-4 bg-astro-surface/50 border border-astro-border rounded-2xl px-8 py-4">
+					<div class="inline-flex items-center gap-4 bg-white/10/50 border border-white/20 rounded-2xl px-8 py-4">
 						<div class="flex items-center gap-2">
 							<span class="w-3 h-3 bg-astro-purple rounded-full"></span>
-							<span class="text-astro-text-secondary text-sm">Hoy contactas</span>
+							<span class="text-gray-300 text-sm">Hoy contactas</span>
 						</div>
-						<span class="text-astro-text-muted">→</span>
+						<span class="text-gray-400">→</span>
 						<div class="flex items-center gap-2">
 							<span class="w-3 h-3 bg-astro-blue rounded-full"></span>
-							<span class="text-astro-text-secondary text-sm">Mañana trabajamos</span>
+							<span class="text-gray-300 text-sm">Mañana trabajamos</span>
 						</div>
-						<span class="text-astro-text-muted">→</span>
+						<span class="text-gray-400">→</span>
 						<div class="flex items-center gap-2">
 							<span class="w-3 h-3 bg-astro-cyan rounded-full"></span>
-							<span class="text-astro-text-primary text-sm font-bold">24h después vendés</span>
+							<span class="text-white text-sm font-bold">24h después vendés</span>
 						</div>
 					</div>
 				</div>
@@ -549,7 +547,7 @@ import '../styles/global.css';
 					<Button variant="primary" size="lg" href="#contacto" class="text-lg px-12 py-4">
 						🚀 Empezar ahora mismo
 					</Button>
-					<p class="text-astro-text-muted text-sm mt-4">
+					<p class="text-gray-400 text-sm mt-4">
 						Sin permanencia • Garantía de 30 días • Soporte incluido
 					</p>
 				</div>
@@ -557,13 +555,13 @@ import '../styles/global.css';
 		</section>
 
 		<!-- Sistema de Afiliados -->
-		<section id="afiliados" class="py-24 bg-astro-section relative">
+		<section id="afiliados" class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						Genera ingresos siendo afiliado
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						Gana 40% de comisión por cada cliente que referas • Pagos mensuales • Sin límites
 					</p>
 				</div>
@@ -571,21 +569,21 @@ import '../styles/global.css';
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
 					<!-- Beneficios del afiliado -->
 					<div>
-						<div class="bg-astro-surface border border-astro-border rounded-2xl p-8 mb-8">
+						<div class="bg-white/10 border border-white/20 rounded-2xl p-8 mb-8">
 							<div class="text-center mb-8">
 								<div class="text-6xl font-black text-astro-purple mb-2">40%</div>
-								<div class="text-xl text-astro-text-primary font-bold">de comisión recurrente</div>
-								<div class="text-astro-text-secondary">por cada cliente referido</div>
+								<div class="text-xl text-white font-bold">de comisión recurrente</div>
+								<div class="text-gray-300">por cada cliente referido</div>
 							</div>
 							
 							<div class="grid grid-cols-2 gap-4 text-center">
 								<div>
-									<div class="text-2xl font-bold text-astro-text-primary">$48k</div>
-									<div class="text-sm text-astro-text-secondary">Plan Básico</div>
+									<div class="text-2xl font-bold text-white">$48k</div>
+									<div class="text-sm text-gray-300">Plan Básico</div>
 								</div>
 								<div>
-									<div class="text-2xl font-bold text-astro-text-primary">$112k</div>
-									<div class="text-sm text-astro-text-secondary">Plan Plus</div>
+									<div class="text-2xl font-bold text-white">$112k</div>
+									<div class="text-sm text-gray-300">Plan Plus</div>
 								</div>
 							</div>
 						</div>
@@ -596,10 +594,10 @@ import '../styles/global.css';
 									<span class="text-white text-sm">💰</span>
 								</div>
 								<div>
-									<h3 class="text-lg font-semibold text-astro-text-primary mb-2">
+									<h3 class="text-lg font-semibold text-white mb-2">
 										Comisión recurrente de por vida
 									</h3>
-									<p class="text-astro-text-secondary">
+									<p class="text-gray-300">
 										Ganas el 40% todos los meses mientras tu referido mantenga activo su plan. 
 										Sin límite de tiempo.
 									</p>
@@ -611,10 +609,10 @@ import '../styles/global.css';
 									<span class="text-white text-sm">🎯</span>
 								</div>
 								<div>
-									<h3 class="text-lg font-semibold text-astro-text-primary mb-2">
+									<h3 class="text-lg font-semibold text-white mb-2">
 										Panel de control exclusivo
 									</h3>
-									<p class="text-astro-text-secondary">
+									<p class="text-gray-300">
 										Rastrea tus referencias, comisiones ganadas, y pagos en tiempo real. 
 										Con estadísticas detalladas.
 									</p>
@@ -626,10 +624,10 @@ import '../styles/global.css';
 									<span class="text-white text-sm">📈</span>
 								</div>
 								<div>
-									<h3 class="text-lg font-semibold text-astro-text-primary mb-2">
+									<h3 class="text-lg font-semibold text-white mb-2">
 										Material promocional incluido
 									</h3>
-									<p class="text-astro-text-secondary">
+									<p class="text-gray-300">
 										Videos, imágenes, textos y plantillas listas para usar en redes sociales. 
 										Todo optimizado para convertir.
 									</p>
@@ -639,42 +637,42 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Calculadora de ganancias -->
-					<div class="bg-astro-surface border border-astro-border rounded-2xl p-8">
-						<h3 class="text-2xl font-bold text-astro-text-primary mb-6 text-center">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8">
+						<h3 class="text-2xl font-bold text-white mb-6 text-center">
 							Calculadora de ganancias
 						</h3>
 						
 						<div class="space-y-6">
-							<div class="bg-astro-bg border border-astro-border rounded-xl p-6">
+							<div class=" border border-white/20 rounded-xl p-6">
 								<div class="text-center mb-4">
-									<div class="text-sm text-astro-text-secondary mb-2">Si referes solo...</div>
-									<div class="text-3xl font-bold text-astro-text-primary">5 clientes</div>
-									<div class="text-sm text-astro-text-secondary">por mes</div>
+									<div class="text-sm text-gray-300 mb-2">Si referes solo...</div>
+									<div class="text-3xl font-bold text-white">5 clientes</div>
+									<div class="text-sm text-gray-300">por mes</div>
 								</div>
 								
 								<div class="grid grid-cols-2 gap-4 text-center">
 									<div>
 										<div class="text-lg font-bold text-astro-blue">3 Básicos</div>
-										<div class="text-sm text-astro-text-secondary">$144k/mes</div>
+										<div class="text-sm text-gray-300">$144k/mes</div>
 									</div>
 									<div>
 										<div class="text-lg font-bold text-astro-purple">2 Plus</div>
-										<div class="text-sm text-astro-text-secondary">$224k/mes</div>
+										<div class="text-sm text-gray-300">$224k/mes</div>
 									</div>
 								</div>
 								
-								<div class="border-t border-astro-border mt-4 pt-4">
+								<div class="border-t border-white/20 mt-4 pt-4">
 									<div class="text-center">
 										<div class="text-2xl font-bold text-astro-cyan">$368k</div>
-										<div class="text-sm text-astro-text-secondary">ingresos mensuales recurrentes</div>
+										<div class="text-sm text-gray-300">ingresos mensuales recurrentes</div>
 									</div>
 								</div>
 							</div>
 							
 							<div class="text-center">
-								<div class="text-astro-text-primary font-bold mb-2">En 1 año serían:</div>
+								<div class="text-white font-bold mb-2">En 1 año serían:</div>
 								<div class="text-4xl font-black text-astro-primary">$4.4M</div>
-								<div class="text-sm text-astro-text-muted">Solo con 5 referencias mensuales</div>
+								<div class="text-sm text-gray-400">Solo con 5 referencias mensuales</div>
 							</div>
 						</div>
 						
@@ -687,8 +685,8 @@ import '../styles/global.css';
 				</div>
 				
 				<!-- Requisitos y proceso -->
-				<div class="bg-astro-bg border border-astro-border rounded-2xl p-8">
-					<h3 class="text-2xl font-bold text-astro-text-primary mb-8 text-center">
+				<div class=" border border-white/20 rounded-2xl p-8">
+					<h3 class="text-2xl font-bold text-white mb-8 text-center">
 						¿Cómo ser afiliado?
 					</h3>
 					
@@ -697,10 +695,10 @@ import '../styles/global.css';
 							<div class="w-16 h-16 bg-astro-primary rounded-full flex items-center justify-center mx-auto mb-4 glow-purple">
 								<span class="text-white text-2xl">📝</span>
 							</div>
-							<h4 class="text-lg font-semibold text-astro-text-primary mb-2">
+							<h4 class="text-lg font-semibold text-white mb-2">
 								1. Aplica gratis
 							</h4>
-							<p class="text-astro-text-secondary text-sm">
+							<p class="text-gray-300 text-sm">
 								Llena el formulario con tus datos y cómo planeas promocionar
 							</p>
 						</div>
@@ -709,10 +707,10 @@ import '../styles/global.css';
 							<div class="w-16 h-16 bg-astro-blue rounded-full flex items-center justify-center mx-auto mb-4 glow-blue">
 								<span class="text-white text-2xl">✅</span>
 							</div>
-							<h4 class="text-lg font-semibold text-astro-text-primary mb-2">
+							<h4 class="text-lg font-semibold text-white mb-2">
 								2. Aprobación 24h
 							</h4>
-							<p class="text-astro-text-secondary text-sm">
+							<p class="text-gray-300 text-sm">
 								Revisamos tu aplicación y te damos acceso a tu panel de afiliado
 							</p>
 						</div>
@@ -721,10 +719,10 @@ import '../styles/global.css';
 							<div class="w-16 h-16 bg-astro-cyan rounded-full flex items-center justify-center mx-auto mb-4 glow-blue">
 								<span class="text-white text-2xl">💰</span>
 							</div>
-							<h4 class="text-lg font-semibold text-astro-text-primary mb-2">
+							<h4 class="text-lg font-semibold text-white mb-2">
 								3. Empiezas a ganar
 							</h4>
-							<p class="text-astro-text-secondary text-sm">
+							<p class="text-gray-300 text-sm">
 								Recibe tu link único y material promocional para empezar
 							</p>
 						</div>
@@ -734,13 +732,13 @@ import '../styles/global.css';
 		</section>
 
 		<!-- Social Proof / Testimonios -->
-		<section class="py-24 bg-astro-bg relative">
+		<section class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						Lo que dicen nuestros clientes
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						Más de 500 emprendedores colombianos ya están vendiendo con nosotros
 					</p>
 				</div>
@@ -749,37 +747,37 @@ import '../styles/global.css';
 				<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
 					<div class="text-center">
 						<div class="text-4xl font-black text-astro-primary mb-2">500+</div>
-						<div class="text-astro-text-secondary">Tiendas creadas</div>
+						<div class="text-gray-300">Tiendas creadas</div>
 					</div>
 					<div class="text-center">
 						<div class="text-4xl font-black text-astro-blue mb-2">24h</div>
-						<div class="text-astro-text-secondary">Tiempo promedio</div>
+						<div class="text-gray-300">Tiempo promedio</div>
 					</div>
 					<div class="text-center">
 						<div class="text-4xl font-black text-astro-purple mb-2">98%</div>
-						<div class="text-astro-text-secondary">Clientes satisfechos</div>
+						<div class="text-gray-300">Clientes satisfechos</div>
 					</div>
 					<div class="text-center">
 						<div class="text-4xl font-black text-astro-cyan mb-2">24/7</div>
-						<div class="text-astro-text-secondary">Soporte disponible</div>
+						<div class="text-gray-300">Soporte disponible</div>
 					</div>
 				</div>
 				
 				<!-- Testimonios -->
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 					<!-- Testimonio 1 -->
-					<div class="bg-astro-surface border border-astro-border rounded-xl p-6 hover:border-astro-purple/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-astro-purple/30 transition-all duration-300">
 						<div class="flex items-center mb-4">
 							<div class="w-12 h-12 bg-astro-primary rounded-full flex items-center justify-center text-white font-bold">
 								M
 							</div>
 							<div class="ml-4">
-								<div class="font-semibold text-astro-text-primary">María González</div>
-								<div class="text-sm text-astro-text-secondary">Ropa femenina - Medellín</div>
+								<div class="font-semibold text-white">María González</div>
+								<div class="text-sm text-gray-300">Ropa femenina - Medellín</div>
 							</div>
 						</div>
 						<div class="text-yellow-400 mb-3">★★★★★</div>
-						<p class="text-astro-text-secondary">
+						<p class="text-gray-300">
 							"¡No podía creer que en 18 horas tenía mi tienda funcionando! 
 							Ya llevo 3 meses vendiendo y el soporte es increíble. 
 							Lo mejor: no cobran comisión por venta."
@@ -787,18 +785,18 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Testimonio 2 -->
-					<div class="bg-astro-surface border border-astro-border rounded-xl p-6 hover:border-astro-blue/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-astro-blue/30 transition-all duration-300">
 						<div class="flex items-center mb-4">
 							<div class="w-12 h-12 bg-astro-blue rounded-full flex items-center justify-center text-white font-bold">
 								C
 							</div>
 							<div class="ml-4">
-								<div class="font-semibold text-astro-text-primary">Carlos Ruiz</div>
-								<div class="text-sm text-astro-text-secondary">Suplementos - Bogotá</div>
+								<div class="font-semibold text-white">Carlos Ruiz</div>
+								<div class="text-sm text-gray-300">Suplementos - Bogotá</div>
 							</div>
 						</div>
 						<div class="text-yellow-400 mb-3">★★★★★</div>
-						<p class="text-astro-text-secondary">
+						<p class="text-gray-300">
 							"Intenté con Shopify por 2 meses y gasté más de $1M sin resultados. 
 							Con Ecomerciante en 1 día ya estaba vendiendo. 
 							Excelente inversión."
@@ -806,18 +804,18 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Testimonio 3 -->
-					<div class="bg-astro-surface border border-astro-border rounded-xl p-6 hover:border-astro-cyan/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-astro-cyan/30 transition-all duration-300">
 						<div class="flex items-center mb-4">
 							<div class="w-12 h-12 bg-astro-purple rounded-full flex items-center justify-center text-white font-bold">
 								A
 							</div>
 							<div class="ml-4">
-								<div class="font-semibold text-astro-text-primary">Ana Torres</div>
-								<div class="text-sm text-astro-text-secondary">Accesorios - Cali</div>
+								<div class="font-semibold text-white">Ana Torres</div>
+								<div class="text-sm text-gray-300">Accesorios - Cali</div>
 							</div>
 						</div>
 						<div class="text-yellow-400 mb-3">★★★★★</div>
-						<p class="text-astro-text-secondary">
+						<p class="text-gray-300">
 							"El diseño quedó hermoso y profesional. 
 							Mis clientes piensan que contraté una agencia carísima. 
 							El soporte por WhatsApp es genial."
@@ -827,25 +825,25 @@ import '../styles/global.css';
 				
 				<!-- Logos de confianza / Medios de pago -->
 				<div class="text-center">
-					<h3 class="text-lg font-semibold text-astro-text-primary mb-8">
+					<h3 class="text-lg font-semibold text-white mb-8">
 						Integramos con tus métodos de pago favoritos
 					</h3>
 					
 					<div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
-						<div class="bg-astro-surface border border-astro-border rounded-lg px-6 py-3">
-							<span class="text-astro-text-primary font-bold">💳 PSE</span>
+						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
+							<span class="text-white font-bold">💳 PSE</span>
 						</div>
-						<div class="bg-astro-surface border border-astro-border rounded-lg px-6 py-3">
-							<span class="text-astro-text-primary font-bold">💰 Nequi</span>
+						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
+							<span class="text-white font-bold">💰 Nequi</span>
 						</div>
-						<div class="bg-astro-surface border border-astro-border rounded-lg px-6 py-3">
-							<span class="text-astro-text-primary font-bold">🏦 Daviplata</span>
+						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
+							<span class="text-white font-bold">🏦 Daviplata</span>
 						</div>
-						<div class="bg-astro-surface border border-astro-border rounded-lg px-6 py-3">
-							<span class="text-astro-text-primary font-bold">💳 T. Crédito</span>
+						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
+							<span class="text-white font-bold">💳 T. Crédito</span>
 						</div>
-						<div class="bg-astro-surface border border-astro-border rounded-lg px-6 py-3">
-							<span class="text-astro-text-primary font-bold">💸 Efecty</span>
+						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
+							<span class="text-white font-bold">💸 Efecty</span>
 						</div>
 					</div>
 				</div>
@@ -853,13 +851,13 @@ import '../styles/global.css';
 		</section>
 
 		<!-- FAQ -->
-		<section id="faq" class="py-24 stardust-alt relative">
+		<section id="faq" class="py-24 relative">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-astro-text-primary mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
 						Preguntas frecuentes
 					</h2>
-					<p class="text-xl text-astro-text-secondary max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
 						Resolvemos las dudas más comunes sobre nuestro servicio
 					</p>
 				</div>
@@ -916,11 +914,11 @@ import '../styles/global.css';
 				
 				<!-- CTA final -->
 				<div class="text-center mt-16">
-					<div class="bg-astro-surface border border-astro-border rounded-2xl p-8">
-						<h3 class="text-2xl font-bold text-astro-text-primary mb-4">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8">
+						<h3 class="text-2xl font-bold text-white mb-4">
 							¿Tienes otra pregunta?
 						</h3>
-						<p class="text-astro-text-secondary mb-6">
+						<p class="text-gray-300 mb-6">
 							Escríbenos directo por WhatsApp y te respondemos al instante
 						</p>
 						<Button variant="primary" size="lg" href="https://wa.me/573001234567" class="inline-flex items-center gap-2">
@@ -933,34 +931,31 @@ import '../styles/global.css';
 		</section>
 
 		<!-- CTA Final -->
-		<section id="contacto" class="py-24 bg-astro-hero relative overflow-hidden">
-			<div class="absolute inset-0 bg-astro-stardust"></div>
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-astro-bg/30"></div>
-			
-			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-				<h2 class="text-4xl md:text-6xl font-black text-astro-text-primary mb-6">
+		<section id="contacto" class="py-24">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-4xl md:text-6xl font-black text-white mb-6">
 					¿Listo para empezar?
 				</h2>
-				<p class="text-xl md:text-2xl text-astro-text-secondary mb-8">
+				<p class="text-xl md:text-2xl text-gray-300 mb-8">
 					Tu tienda online profesional te está esperando
 				</p>
 				
-				<div class="bg-astro-surface/80 backdrop-blur-sm border border-astro-border rounded-2xl p-8 mb-8">
+				<div class="bg-white/10/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 mb-8">
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 						<div class="text-center">
 							<div class="text-3xl mb-2">⚡</div>
-							<div class="text-astro-text-primary font-bold">24 horas</div>
-							<div class="text-astro-text-secondary text-sm">Tu tienda lista</div>
+							<div class="text-white font-bold">24 horas</div>
+							<div class="text-gray-300 text-sm">Tu tienda lista</div>
 						</div>
 						<div class="text-center">
 							<div class="text-3xl mb-2">💰</div>
-							<div class="text-astro-text-primary font-bold">0% comisión</div>
-							<div class="text-astro-text-secondary text-sm">Todo para ti</div>
+							<div class="text-white font-bold">0% comisión</div>
+							<div class="text-gray-300 text-sm">Todo para ti</div>
 						</div>
 						<div class="text-center">
 							<div class="text-3xl mb-2">🛡️</div>
-							<div class="text-astro-text-primary font-bold">30 días</div>
-							<div class="text-astro-text-secondary text-sm">Garantía total</div>
+							<div class="text-white font-bold">30 días</div>
+							<div class="text-gray-300 text-sm">Garantía total</div>
 						</div>
 					</div>
 					
@@ -977,7 +972,7 @@ import '../styles/global.css';
 					</div>
 				</div>
 				
-				<div class="text-center text-astro-text-muted">
+				<div class="text-center text-gray-400">
 					<p class="text-sm">
 						🔒 Sin permanencia • ⚡ Entrega garantizada • 💬 Soporte 24/7
 					</p>

@@ -55,8 +55,12 @@ export default {
 				'astro-primary': 'linear-gradient(83.21deg, #3245ff, #b845ed)', // Gradiente exacto
 				'astro-stardust': 'linear-gradient(270deg, #bc52ee1a 100%, #3245ff4d)',
 				'astro-stardust-alt': 'linear-gradient(270deg, #40debf4d, #334ba94d)', 
-				'astro-hero': 'linear-gradient(135deg, #17191e 0%, #23262d 50%, #34384141 100%)',
+				// Hero background auténtico como Astro.build
+				'astro-hero': 'radial-gradient(ellipse at top, rgba(188, 82, 238, 0.3) 0%, rgba(50, 69, 255, 0.2) 30%, rgba(23, 25, 30, 0.9) 70%, #17191e 100%)',
+				'astro-hero-main': 'linear-gradient(135deg, #4c1d95 0%, #7c3aed 35%, #2563eb 100%)',
 				'astro-section': 'linear-gradient(180deg, #17191e 0%, #23262d 100%)',
+				// Gradientes para transiciones suaves
+				'fade-to-dark': 'linear-gradient(to bottom, transparent 0%, rgba(23, 25, 30, 0.3) 40%, rgba(23, 25, 30, 0.8) 80%, #17191e 100%)',
 			},
 		},
 	},
