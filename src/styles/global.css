@@ -6,14 +6,83 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
   }
   
   body {
-    @apply bg-white text-primary-900 antialiased;
+    @apply bg-astro-bg text-astro-text-primary antialiased;
+    background-image: radial-gradient(ellipse at top, #bc52ee1a 0%, transparent 50%),
+                      radial-gradient(ellipse at bottom, #3245ff1a 0%, transparent 50%);
   }
   
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
+  /* Custom scrollbar for Astro theme */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-astro-bg;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-astro-border rounded-full;
+    background: linear-gradient(45deg, #bc52ee, #3245ff);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-astro-hover;
+  }
+  
+  /* Glowing effects for inputs and interactive elements */
+  .glow-purple {
+    box-shadow: 0 0 20px #bc52ee4d;
+  }
+  
+  .glow-blue {
+    box-shadow: 0 0 20px #3245ff4d;
+  }
+
+  /* Astro 3D perspective effects */
+  .perspective-astro {
+    perspective: 500px;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 30%;
+  }
+  
+  .perspective-astro > * {
+    will-change: transform;
+    transform: rotate(-10deg) rotateY(20deg) rotateX(40deg) translate(5%) translateY(-10%) translateZ(50px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .perspective-astro:hover > *,
+  .perspective-astro:has(:focus-visible) > *,
+  .perspective-astro.in-viewport > * {
+    transform: none;
+  }
+  
+  /* Stardust background class */
+  .stardust {
+    background: linear-gradient(270deg, #bc52ee1a 100%, #3245ff4d);
+  }
+  
+  .stardust-alt {
+    background: linear-gradient(270deg, #40debf4d, #334ba94d);
+  }
+  
+  /* Marquee animation */
+  @keyframes marquee {
+    0% { transform: translate(0); }
+    100% { transform: translate(100%); }
+  }
+  
+  .marquee {
+    animation: marquee 50s linear infinite;
+    animation-play-state: paused;
+  }
+  
+  .marquee:hover,
+  .marquee.in-viewport {
+    animation-play-state: running;
   }
 }

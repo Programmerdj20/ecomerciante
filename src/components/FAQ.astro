@@ -1,0 +1,52 @@
+---
+export interface Props {
+  question: string;
+  answer: string;
+  id: string;
+}
+
+const { question, answer, id } = Astro.props;
+---
+
+<div class="faq-item border border-astro-border rounded-lg mb-4 overflow-hidden">
+  <button 
+    class="w-full px-6 py-4 text-left bg-astro-surface hover:bg-astro-hover transition-colors focus:outline-none focus:ring-2 focus:ring-astro-purple flex justify-between items-center"
+    onclick={`toggleFAQ('${id}')`}
+  >
+    <span class="text-astro-text-primary font-medium text-lg">{question}</span>
+    <svg 
+      class="w-5 h-5 text-astro-text-secondary transform transition-transform faq-icon" 
+      id={`icon-${id}`}
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  
+  <div class="faq-answer overflow-hidden transition-all duration-300 max-h-0" id={`answer-${id}`}>
+    <div class="px-6 py-4 bg-astro-bg border-t border-astro-border">
+      <p class="text-astro-text-secondary">{answer}</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.toggleFAQ = function(id: string) {
+    const answer = document.getElementById(`answer-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+    
+    if (answer && icon) {
+      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+      
+      if (isOpen) {
+        answer.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  }
+</script>
