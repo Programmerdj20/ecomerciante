@@ -1,93 +1,90 @@
 ---
-// Header componente
+// Header componente moderno
 ---
 
-<header class="sticky top-0 z-50 bg-astro-bg/80 backdrop-blur-md border-b border-astro-border">
-	<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex items-center justify-between h-16">
+<header class="relative lg:relative sticky lg:static top-0 z-50 navbar-gradient backdrop-blur-lg border-b border-white/10">
+	<nav class="max-w-7xl mx-auto px-6 lg:px-8">
+		<div class="flex items-center justify-between py-4 lg:py-6">
 			<!-- Logo -->
 			<div class="flex-shrink-0">
-				<a href="/" class="flex items-center">
-					<span class="text-xl font-bold text-astro-text-primary">
-						Ecomerciante
-					</span>
+				<a href="/" class="flex items-center group">
+					<img 
+						src="/images/logos/Logo_E_Horizon.webp" 
+						alt="Ecomerciante"
+						class="h-10 w-auto transition-all duration-300 group-hover:scale-105"
+					/>
 				</a>
 			</div>
 
 			<!-- Navigation Links - Desktop -->
-			<div class="hidden md:block">
-				<div class="ml-10 flex items-baseline space-x-8">
-					<a href="#planes" class="text-astro-text-secondary hover:text-astro-text-primary px-3 py-2 text-sm font-medium transition-colors hover:glow-purple">
-						Planes
-					</a>
-					<a href="#como-funciona" class="text-astro-text-secondary hover:text-astro-text-primary px-3 py-2 text-sm font-medium transition-colors hover:glow-purple">
-						Cómo Funciona
-					</a>
-					<a href="#afiliados" class="text-astro-text-secondary hover:text-astro-text-primary px-3 py-2 text-sm font-medium transition-colors hover:glow-purple">
-						Afiliados
-					</a>
-					<a href="#faq" class="text-astro-text-secondary hover:text-astro-text-primary px-3 py-2 text-sm font-medium transition-colors hover:glow-purple">
-						FAQ
-					</a>
-				</div>
-			</div>
-
-			<!-- CTA Button -->
-			<div class="hidden md:block">
-				<a 
-					href="#contacto" 
-					class="bg-gradient-to-r from-astro-purple to-astro-blue hover:from-astro-purple/80 hover:to-astro-blue/80 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 glow-purple"
-				>
-					Crear Mi Tienda Ya
+			<div class="hidden lg:flex items-center space-x-8">
+				<a href="#planes" class="nav-link">
+					<span>Planes</span>
+				</a>
+				<a href="#como-funciona" class="nav-link">
+					<span>Cómo Funciona</span>
+				</a>
+				<a href="#afiliados" class="nav-link">
+					<span>Afiliados</span>
+				</a>
+				<a href="#faq" class="nav-link">
+					<span>FAQ</span>
 				</a>
 			</div>
 
-			<!-- Mobile menu button -->
-			<div class="md:hidden">
-				<button 
-					type="button" 
-					class="text-primary-600 hover:text-primary-900 focus:outline-none focus:text-primary-900"
-					id="mobile-menu-button"
+			<!-- CTA Button - Desktop y Mobile -->
+			<div class="flex items-center">
+				<a 
+					href="#contacto" 
+					class="btn-primary"
 				>
-					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-					</svg>
-				</button>
+					🚀 Crear Mi Tienda
+				</a>
 			</div>
 		</div>
 
-		<!-- Mobile menu -->
-		<div class="md:hidden hidden" id="mobile-menu">
-			<div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-primary-100">
-				<a href="#planes" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
-					Planes
-				</a>
-				<a href="#como-funciona" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
-					Cómo Funciona
-				</a>
-				<a href="#afiliados" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
-					Afiliados
-				</a>
-				<a href="#faq" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
-					FAQ
-				</a>
-				<a 
-					href="#contacto" 
-					class="bg-accent-600 hover:bg-accent-700 text-white block px-3 py-2 rounded-lg text-sm font-medium mt-2"
-				>
-					Crear Mi Tienda Ya
-				</a>
-			</div>
-		</div>
 	</nav>
 </header>
 
-<script>
-	// Mobile menu toggle
-	const button = document.getElementById('mobile-menu-button');
-	const menu = document.getElementById('mobile-menu');
+<style>
+	/* Gradiente lateral para navbar */
+	.navbar-gradient {
+		/* Fallback */
+		background: #13161c;
+		/* Gradiente con más blanco izquierda para mejor contraste del logo */
+		background: -webkit-linear-gradient(to right, #374151, #1f2937, #13161c);
+		background: linear-gradient(to right, #374151, #1f2937, #13161c);
+	}
 	
-	button?.addEventListener('click', () => {
-		menu?.classList.toggle('hidden');
-	});
-</script>
+	/* Navegación desktop */
+	.nav-link {
+		@apply relative text-white/80 hover:text-white font-medium text-sm transition-all duration-300;
+	}
+	
+	.nav-link::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: linear-gradient(90deg, #10B981, #1E3A8A);
+		transition: width 0.3s ease;
+	}
+	
+	.nav-link:hover::after {
+		width: 100%;
+	}
+	
+	/* Botón CTA */
+	.btn-primary {
+		@apply bg-brand-success hover:bg-emerald-600 text-white px-4 py-2 text-xs lg:px-6 lg:py-3 lg:text-sm rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+		box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
+	}
+	
+	.btn-primary:hover {
+		box-shadow: 0 8px 30px rgba(16, 185, 129, 0.35);
+	}
+	
+</style>
+

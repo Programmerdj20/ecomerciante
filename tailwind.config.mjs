@@ -7,60 +7,18 @@ export default {
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
-				// Tema oscuro Astro (basado en CSS real)
-				astro: {
-					// Fondos del CSS real
-					bg: '#17191e',        // --ec-codeBg del CSS
-					surface: '#23262d',   // --ec-frm-trmBg 
-					hover: '#3d4dfff0',   // --ec-codeSelBg
-					border: '#34384141',  // border colors del CSS
-					// Gradientes principales (exactos del CSS)
-					purple: '#b845ed',    // Del gradiente real
-					blue: '#3245ff',      // Del gradiente real  
-					pink: '#ff1b6b',      // Rosa/magenta
-					cyan: '#45ffbc',      // Cian accent
-					// Texto del CSS real
-					text: {
-						primary: '#ffffff',   // Blanco texto
-						secondary: '#bfc1c9', // rgb(191 193 201) del CSS
-						muted: '#858b98',     // colores muted del CSS
-					}
-				},
-				// Mantenemos algunos GitHub colors para botones
-				github: {
-					blue: '#58a6ff',
-					green: '#3fb950',
-					purple: '#a5a6ff',
-					orange: '#ffa657',
-					red: '#f85149',
-				},
-				// Redefino primary para usar astro colors
-				primary: {
-					50: '#ffffff',
-					100: '#e2e8f0', 
-					200: '#cbd5e1',
-					300: '#94a3b8',
-					400: '#64748b',
-					500: '#475569',
-					600: '#334155',
-					700: '#2a1b4d',
-					800: '#1e1535',
-					900: '#1a0b2e',
-				},
-			},
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				// Gradientes Astro auténticos (del CSS real descargado)
-				'astro-primary': 'linear-gradient(83.21deg, #3245ff, #b845ed)', // Gradiente exacto
-				'astro-stardust': 'linear-gradient(270deg, #bc52ee1a 100%, #3245ff4d)',
-				'astro-stardust-alt': 'linear-gradient(270deg, #40debf4d, #334ba94d)', 
-				// Hero background auténtico como Astro.build
-				'astro-hero': 'radial-gradient(ellipse at top, rgba(188, 82, 238, 0.3) 0%, rgba(50, 69, 255, 0.2) 30%, rgba(23, 25, 30, 0.9) 70%, #17191e 100%)',
-				'astro-hero-main': 'linear-gradient(135deg, #4c1d95 0%, #7c3aed 35%, #2563eb 100%)',
-				'astro-section': 'linear-gradient(180deg, #17191e 0%, #23262d 100%)',
-				// Gradientes para transiciones suaves
-				'fade-to-dark': 'linear-gradient(to bottom, transparent 0%, rgba(23, 25, 30, 0.3) 40%, rgba(23, 25, 30, 0.8) 80%, #17191e 100%)',
+				// Paleta limpia Ecomerciante
+				brand: {
+					dark: '#13161c',      // Fondo oscuro elegante
+					light: '#f3f4f6',     // Fondo claro suave  
+					success: '#10B981',   // Verde marca (CTAs)
+					primary: '#1E3A8A',   // Azul marca (enlaces)
+					text: '#4B5563',      // Gris marca (texto secundario)
+					white: '#ffffff',     // Texto principal
+					muted: '#9CA3AF',     // Texto terciario
+					border: '#E5E7EB',    // Bordes suaves
+					surface: '#1F2937',   // Superficies secundarias oscuras
+				}
 			},
 		},
 	},
