@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/Button.astro';
+import '../styles/global.css';
+---
+
+<Layout title="EcomerciAnte - Tu tienda online en 24 horas">
+	<Header />
+	
+	<main class="min-h-screen">
+		<!-- Temporary Hero Section para testing -->
+		<section class="bg-gradient-to-br from-primary-50 via-white to-accent-50 py-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center">
+					<h1 class="text-5xl md:text-6xl font-bold text-primary-900 mb-6">
+						EcomerciAnte
+					</h1>
+					<p class="text-xl text-primary-600 mb-8 max-w-3xl mx-auto">
+						Tu tienda online en 24 horas con soporte técnico incluido
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+						<Button variant="primary" size="lg" href="#contacto">
+							Crear Mi Tienda Ya
+						</Button>
+						<Button variant="outline" size="lg" href="#planes">
+							Ver Planes
+						</Button>
+					</div>
+					<div class="mt-8">
+						<span class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">
+							✅ Listo para vender en 24 horas
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Placeholder sections para estructura -->
+		<section id="planes" class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 text-center">
+				<h2 class="text-3xl font-bold text-primary-900 mb-8">Planes y Precios</h2>
+				<p class="text-primary-600">Sección en desarrollo...</p>
+			</div>
+		</section>
+
+		<section id="como-funciona" class="py-20 bg-primary-50">
+			<div class="max-w-7xl mx-auto px-4 text-center">
+				<h2 class="text-3xl font-bold text-primary-900 mb-8">Cómo Funciona</h2>
+				<p class="text-primary-600">Sección en desarrollo...</p>
+			</div>
+		</section>
+
+		<section id="afiliados" class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 text-center">
+				<h2 class="text-3xl font-bold text-primary-900 mb-8">Sistema de Afiliados</h2>
+				<p class="text-primary-600">Sección en desarrollo...</p>
+			</div>
+		</section>
+
+		<section id="faq" class="py-20 bg-primary-50">
+			<div class="max-w-7xl mx-auto px-4 text-center">
+				<h2 class="text-3xl font-bold text-primary-900 mb-8">FAQ</h2>
+				<p class="text-primary-600">Sección en desarrollo...</p>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</Layout>

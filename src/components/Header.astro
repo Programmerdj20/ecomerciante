@@ -1,0 +1,93 @@
+---
+// Header componente
+---
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-primary-100">
+	<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex items-center justify-between h-16">
+			<!-- Logo -->
+			<div class="flex-shrink-0">
+				<a href="/" class="flex items-center">
+					<span class="text-xl font-bold text-primary-900">
+						EcomerciAnte
+					</span>
+				</a>
+			</div>
+
+			<!-- Navigation Links - Desktop -->
+			<div class="hidden md:block">
+				<div class="ml-10 flex items-baseline space-x-8">
+					<a href="#planes" class="text-primary-600 hover:text-primary-900 px-3 py-2 text-sm font-medium transition-colors">
+						Planes
+					</a>
+					<a href="#como-funciona" class="text-primary-600 hover:text-primary-900 px-3 py-2 text-sm font-medium transition-colors">
+						Cómo Funciona
+					</a>
+					<a href="#afiliados" class="text-primary-600 hover:text-primary-900 px-3 py-2 text-sm font-medium transition-colors">
+						Afiliados
+					</a>
+					<a href="#faq" class="text-primary-600 hover:text-primary-900 px-3 py-2 text-sm font-medium transition-colors">
+						FAQ
+					</a>
+				</div>
+			</div>
+
+			<!-- CTA Button -->
+			<div class="hidden md:block">
+				<a 
+					href="#contacto" 
+					class="bg-accent-600 hover:bg-accent-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+				>
+					Crear Mi Tienda Ya
+				</a>
+			</div>
+
+			<!-- Mobile menu button -->
+			<div class="md:hidden">
+				<button 
+					type="button" 
+					class="text-primary-600 hover:text-primary-900 focus:outline-none focus:text-primary-900"
+					id="mobile-menu-button"
+				>
+					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile menu -->
+		<div class="md:hidden hidden" id="mobile-menu">
+			<div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-primary-100">
+				<a href="#planes" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
+					Planes
+				</a>
+				<a href="#como-funciona" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
+					Cómo Funciona
+				</a>
+				<a href="#afiliados" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
+					Afiliados
+				</a>
+				<a href="#faq" class="text-primary-600 hover:text-primary-900 block px-3 py-2 text-sm font-medium">
+					FAQ
+				</a>
+				<a 
+					href="#contacto" 
+					class="bg-accent-600 hover:bg-accent-700 text-white block px-3 py-2 rounded-lg text-sm font-medium mt-2"
+				>
+					Crear Mi Tienda Ya
+				</a>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<script>
+	// Mobile menu toggle
+	const button = document.getElementById('mobile-menu-button');
+	const menu = document.getElementById('mobile-menu');
+	
+	button?.addEventListener('click', () => {
+		menu?.classList.toggle('hidden');
+	});
+</script>
