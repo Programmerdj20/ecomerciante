@@ -81,3 +81,13 @@ La página principal (`src/pages/index.astro`) incluye todas las secciones de ma
 - **Routing:** File-based routing de Astro (.astro/.md archivos en src/pages/)
 - **Componentes:** Formato .astro con frontmatter TypeScript
 - **CSS:** Tailwind con clases utilitarias + estilos globales cuando necesario
+
+## Configuración de Colores
+
+El proyecto usa una paleta de colores personalizada definida en `tailwind.config.mjs`:
+- **brand.dark:** #13161c (Fondo oscuro elegante)
+- **brand.success:** #10B981 (Verde para CTAs)  
+- **brand.primary:** #1E3A8A (Azul para enlaces)
+- **brand.surface:** #1F2937 (Superficies secundarias oscuras)
+
+Usar estas variables en lugar de colores hardcodeados para mantener consistencia.

@@ -12,56 +12,54 @@ import '../styles/global.css';
 	
 	<main class="min-h-screen">
 		<!-- Hero Section -->
-		<section class="py-32 min-h-screen flex items-center relative">
+		<section class="hero-bg py-32 min-h-screen flex items-center relative">
+			<!-- Overlay para mejorar legibilidad del texto -->
+			<div class="absolute inset-0 bg-black/85 z-0"></div>
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div class="text-center">
 					<div class="mb-6">
-						<span class="inline-flex items-center px-4 py-2 bg-brand-success/10 text-brand-success border border-brand-success/20 rounded-full text-sm font-medium">
-							🚀 Para emprendedores colombianos
+						<span class="inline-flex items-center px-4 py-2 bg-brand-success/10 text-brand-success border border-brand-success/20 rounded-full text-sm font-medium hero-badge">
+							🚀 Para emprendedores Latinos
 						</span>
 					</div>
 					
-					<h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8">
+					<h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8 hero-title">
 						Ecomerciante
 					</h1>
 					
-					<p class="text-2xl md:text-3xl text-gray-300 mb-4 max-w-4xl mx-auto font-light">
+					<p class="text-2xl md:text-3xl text-white mb-4 max-w-4xl mx-auto font-light hero-subtitle">
 						Tu tienda online profesional
 					</p>
-					<p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
-						Lista para vender en 24 horas • Soporte técnico incluido • Sin comisiones ocultas
+					<p class="text-xl text-gray-200 mb-12 max-w-3xl mx-auto hero-description">
+						Lista para vender en 48 horas • Soporte técnico incluido • Sin comisiones ocultas
 					</p>
 					
 					<!-- 3 CTA Options -->
-					<div class="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-						<div class="flex flex-col sm:flex-row gap-4">
-							<Button variant="primary" size="lg" href="#contacto" class="text-lg px-8 py-4">
-								🚀 Crear Mi Tienda Ya
-							</Button>
-							<Button variant="outline" size="lg" href="#planes" class="text-lg px-8 py-4">
-								💰 Ver Precios
-							</Button>
-						</div>
-						<div class="lg:ml-8">
-							<Button variant="secondary" size="lg" href="#afiliados" class="text-lg px-8 py-4">
-								🤝 Ser Afiliado (40% comisión)
-							</Button>
-						</div>
+					<div class="flex flex-col lg:flex-row gap-4 lg:gap-6 justify-center items-center mb-16 hero-cta max-w-4xl mx-auto">
+						<Button variant="primary" size="lg" href="#contacto" class="text-lg px-8 py-4 hero-button-primary">
+							🚀 Crear Mi Tienda Ya
+						</Button>
+						<Button variant="secondary" size="lg" href="#planes" class="text-lg px-8 py-4 hero-button-secondary">
+							💰 Ver Precios
+						</Button>
+						<Button variant="secondary" size="lg" href="#afiliados" class="text-lg px-8 py-4 hero-button-secondary">
+							🤝 Ser Afiliado (20% comisión)
+						</Button>
 					</div>
 					
 					<!-- Key Benefits -->
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 border border-white/20 rounded-lg backdrop-blur-sm">
+						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 rounded-lg backdrop-blur-sm hero-benefit-1">
 							<span class="text-2xl">⏱️</span>
-							<span class="text-white font-medium">24 horas listo</span>
+							<span class="text-white font-medium">48 horas listo</span>
 						</div>
-						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 border border-white/20 rounded-lg backdrop-blur-sm">
+						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 rounded-lg backdrop-blur-sm hero-benefit-2">
 							<span class="text-2xl">🛠️</span>
 							<span class="text-white font-medium">Soporte incluido</span>
 						</div>
-						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 border border-white/20 rounded-lg backdrop-blur-sm">
+						<div class="flex items-center justify-center gap-3 px-6 py-4 bg-white/10/50 rounded-lg backdrop-blur-sm hero-benefit-3">
 							<span class="text-2xl">💳</span>
-							<span class="text-white font-medium">Pagos integrados</span>
+							<span class="text-white font-medium">Pasarelas de Pagos</span>
 						</div>
 					</div>
 				</div>
@@ -72,56 +70,56 @@ import '../styles/global.css';
 		<section class="py-24 -mt-16 pt-32">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-fade-up">
 						¿Te suena familiar?
 					</h2>
-					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
-						Los emprendedores colombianos enfrentan estos problemas todos los días
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto scroll-fade-up">
+						Los emprendedores enfrentan estos problemas todos los días
 					</p>
 				</div>
 				
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<!-- Problema 1 -->
-					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-brand-success/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-brand-success/30 transition-all duration-300 scroll-animate scroll-stagger">
 						<div class="text-4xl mb-4">😤</div>
 						<h3 class="text-xl font-semibold text-white mb-4">
 							Crear tienda es complicado
 						</h3>
 						<p class="text-gray-300">
-							WordPress, Shopify, programadores... Todo toma meses y cuesta una fortuna. 
+							WordPress, Shopify, Wix, programadores... Todo toma meses y cuesta una fortuna. 
 							Solo quieres vender, no volverte programador.
 						</p>
 					</div>
 					
 					<!-- Problema 2 -->
-					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-brand-primary/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-brand-primary/30 transition-all duration-300 scroll-animate scroll-stagger">
 						<div class="text-4xl mb-4">💸</div>
 						<h3 class="text-xl font-semibold text-white mb-4">
 							Costos ocultos por todos lados
 						</h3>
 						<p class="text-gray-300">
-							Comisiones del 5-8%, hosting, dominios, plugins... Al final pagas más 
-							que lo que vendes. Tu margen se evapora.
+							Comisiones del 5-8% por venta de tus productos, hosting, dominios, plugins... Al final pagas más 
+							que lo que vendes. Y tu margen se evapora.
 						</p>
 					</div>
 					
 					<!-- Problema 3 -->
-					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-brand-success/30 transition-all duration-300">
+					<div class="bg-white/10 border border-white/20 rounded-xl p-8 hover:border-brand-success/30 transition-all duration-300 scroll-animate scroll-stagger">
 						<div class="text-4xl mb-4">🤯</div>
 						<h3 class="text-xl font-semibold text-white mb-4">
 							Soporte técnico inexistente
 						</h3>
 						<p class="text-gray-300">
 							Cuando algo se daña, estás solo. Los "expertos" cobran por cada pregunta.
-							Tu tienda offline = ventas perdidas.
+							Tu tienda offline => y tus ventas perdidas.
 						</p>
 					</div>
 				</div>
 				
 				<div class="text-center mt-16">
-					<div class="inline-flex items-center px-6 py-3 bg-red-500/10 text-red-400 border border-red-500/20 rounded-full">
+					<div class="inline-flex items-center px-6 py-3 bg-red-500/10 text-red-400 border border-red-500/20 rounded-full scroll-animate scroll-scale">
 						<span class="text-sm font-medium">
-							💔 El 80% de emprendedores abandonan en el primer año por estos problemas
+							💔 El 80% de los emprendedores abandonan su proyecto en el primer semestre por estos problemas
 						</span>
 					</div>
 				</div>
@@ -133,36 +131,36 @@ import '../styles/global.css';
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
 					<div class="inline-block">
-						<span class="text-brand-success text-sm font-medium uppercase tracking-wider mb-2 block">
+						<span class="text-brand-success text-sm font-medium uppercase tracking-wider mb-2 block scroll-animate scroll-fade-up">
 							Por qué elegirnos
 						</span>
-						<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+						<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-animate scroll-title">
 							Nuestra solución es diferente
 						</h2>
 					</div>
-					<p class="text-xl text-gray-400 max-w-3xl mx-auto">
-						Creamos tu tienda profesional en 24 horas con todo incluido
+					<p class="text-xl text-gray-400 max-w-3xl mx-auto scroll-animate scroll-fade-up">
+						Creamos tu tienda profesional en 48 horas maximo con todo incluido
 					</p>
 				</div>
 				
 				<!-- Grid moderno estilo "Fully Featured" -->
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<!-- Card 1: Velocidad -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-stagger">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">⚡</span>
 						</div>
 						<h3 class="text-xl font-bold text-white mb-4">
-							24 horas, no 3 meses
+							48 horas, no 3 meses
 						</h3>
 						<p class="text-gray-400 leading-relaxed">
 							Mientras otros te hacen esperar meses, nosotros entregamos tu tienda 
-							completamente funcional en máximo 24 horas.
+							completamente funcional en máximo 48 horas.
 						</p>
 					</div>
 					
 					<!-- Card 2: Sin comisiones -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-stagger">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">💰</span>
 						</div>
@@ -176,7 +174,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Card 3: Soporte -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-stagger">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">🛠️</span>
 						</div>
@@ -184,13 +182,13 @@ import '../styles/global.css';
 							Soporte técnico real
 						</h3>
 						<p class="text-gray-400 leading-relaxed">
-							WhatsApp directo con nuestro equipo. Respuesta garantizada en menos de 2 horas.
+							WhatsApp directo con nuestro equipo. Respuesta garantizada en menos de 3 horas.
 							Tu tienda nunca estará sola.
 						</p>
 					</div>
 					
 					<!-- Card 4: Diseño -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-stagger">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">🎨</span>
 						</div>
@@ -204,7 +202,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Card 5: Escalabilidad -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-stagger">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">📈</span>
 						</div>
@@ -218,7 +216,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Card 6: Integración -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-stagger">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">🔗</span>
 						</div>
@@ -239,14 +237,14 @@ import '../styles/global.css';
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
 					<div class="inline-block">
-						<span class="text-brand-primary text-sm font-medium uppercase tracking-wider mb-2 block">
+						<span class="text-brand-success text-sm font-medium uppercase tracking-wider mb-2 block">
 							Todo incluido
 						</span>
-						<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+						<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-animate scroll-title">
 							Qué incluye tu tienda
 						</h2>
 					</div>
-					<p class="text-xl text-gray-400 max-w-3xl mx-auto">
+					<p class="text-xl text-gray-400 max-w-3xl mx-auto scroll-fade-up">
 						Cada tienda viene completamente equipada con todas las herramientas que necesitas
 					</p>
 				</div>
@@ -254,7 +252,7 @@ import '../styles/global.css';
 				<!-- Grid de características técnicas -->
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<!-- Hosting & SSL -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">🛡️</span>
 						</div>
@@ -268,7 +266,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Diseño Responsive -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">📱</span>
 						</div>
@@ -282,7 +280,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Pagos Integrados -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">💳</span>
 						</div>
@@ -290,13 +288,13 @@ import '../styles/global.css';
 							Pagos integrados
 						</h3>
 						<p class="text-gray-400 leading-relaxed">
-							PSE, Nequi, Daviplata, tarjetas de crédito y más. 
+							Tarjetas de crédito, Wompi, Addi, Mercado Pago y más. 
 							Los pagos van directo a tu cuenta.
 						</p>
 					</div>
 					
 					<!-- SEO Optimizado -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">🔍</span>
 						</div>
@@ -310,7 +308,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Panel Admin -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">⚙️</span>
 						</div>
@@ -324,7 +322,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Analytics -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">📊</span>
 						</div>
@@ -338,7 +336,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Email Marketing -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">📧</span>
 						</div>
@@ -352,7 +350,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Backup & Security -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-primary">
 							<span class="text-3xl">🔒</span>
 						</div>
@@ -366,7 +364,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Soporte WhatsApp -->
-					<div class="card-elegant rounded-xl p-8 text-center">
+					<div class="card-elegant rounded-xl p-8 text-center scroll-animate scroll-card">
 						<div class="w-16 h-16 bg-gradient-to-br from-brand-success/20 to-brand-success/10 rounded-lg flex items-center justify-center mx-auto mb-6 subtle-glow-success">
 							<span class="text-3xl">💬</span>
 						</div>
@@ -375,7 +373,7 @@ import '../styles/global.css';
 						</h3>
 						<p class="text-gray-400 leading-relaxed">
 							Línea directa con nuestro equipo técnico. 
-							Respuesta garantizada en menos de 2 horas.
+							Respuesta garantizada en menos de 3 horas.
 						</p>
 					</div>
 				</div>
@@ -386,22 +384,22 @@ import '../styles/global.css';
 		<section id="planes" class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-animate scroll-title">
 						Planes que se adaptan a ti
 					</h2>
-					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto scroll-animate scroll-fade-up">
 						Sin comisiones por venta • Sin permanencia • Soporte incluido
 					</p>
 				</div>
 				
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
 					<!-- Plan Básico -->
-					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-300 relative">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 hover:border-brand-primary/30 transition-all duration-300 relative scroll-animate scroll-stagger">
 						<div class="mb-8">
 							<h3 class="text-2xl font-bold text-white mb-2">Básico</h3>
 							<p class="text-gray-300 mb-4">Perfecto para empezar</p>
 							<div class="flex items-baseline gap-2">
-								<span class="text-4xl font-black text-white">$120k</span>
+								<span class="text-4xl font-black text-white">$85.000</span>
 								<span class="text-gray-400">/mes</span>
 							</div>
 							<p class="text-sm text-gray-400 mt-2">+ setup único $200k COP</p>
@@ -436,7 +434,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Plan Plus (Recomendado) -->
-					<div class="bg-white/10 border-2 border-brand-success rounded-2xl p-8 hover:border-brand-success/50 transition-all duration-300 relative">
+					<div class="bg-white/10 border-2 border-brand-success rounded-2xl p-8 hover:border-brand-success/50 transition-all duration-300 relative scroll-animate scroll-stagger">
 						<div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
 							<span class="bg-brand-success text-white px-6 py-2 rounded-full text-sm font-bold">
 								Más Popular
@@ -486,7 +484,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Plan Personalizado -->
-					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 hover:border-brand-success/30 transition-all duration-300 relative">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 hover:border-brand-success/30 transition-all duration-300 relative scroll-animate scroll-stagger">
 						<div class="mb-8">
 							<h3 class="text-2xl font-bold text-white mb-2">Personalizado</h3>
 							<p class="text-gray-300 mb-4">Para empresas grandes</p>
@@ -535,10 +533,10 @@ import '../styles/global.css';
 						<span class="text-2xl mr-4">🛡️</span>
 						<div>
 							<div class="text-white font-bold text-lg mb-1">
-								Garantía de 30 días
+								Garantía de funcionamiento
 							</div>
 							<div class="text-gray-300 text-sm">
-								Si no estás satisfecho, te devolvemos el 100% del dinero
+								Nuestros sitios son 100% garantizados y funcionales
 							</div>
 						</div>
 					</div>
@@ -550,78 +548,80 @@ import '../styles/global.css';
 		<section id="como-funciona" class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-animate scroll-title">
 						Así de fácil es empezar
 					</h2>
-					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto scroll-animate scroll-fade-up">
 						En solo 3 pasos tienes tu tienda online funcionando
 					</p>
 				</div>
 				
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
 					<!-- Paso 1 -->
-					<div class="text-center relative">
+					<div class="text-center relative timeline-step scroll-animate scroll-fade-left">
 						<div class="mb-8 relative">
-							<div class="w-24 h-24 bg-brand-success rounded-full flex items-center justify-center mx-auto ">
+							<div class="w-24 h-24 bg-brand-success rounded-full flex items-center justify-center mx-auto timeline-number-1">
 								<span class="text-3xl text-white font-bold">1</span>
 							</div>
-							<!-- Línea conectora -->
-							<div class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-brand-success"></div>
 						</div>
-						<h3 class="text-2xl font-bold text-white mb-4">
-							Nos contactas
-						</h3>
-						<p class="text-gray-300 mb-6">
-							Envías un WhatsApp o llenas el formulario con tu información básica: 
-							qué vendes, colores preferidos y dominio que quieres.
-						</p>
-						<div class="bg-white/10 border border-white/20 rounded-xl p-4">
-							<div class="text-sm text-gray-300">
-								⏰ <strong>Tiempo:</strong> 5 minutos
+						<div class="timeline-content-1">
+							<h3 class="text-2xl font-bold text-white mb-4">
+								Nos contactas
+							</h3>
+							<p class="text-gray-300 mb-6">
+								Envías un WhatsApp o llenas el formulario con tu información básica: 
+								qué vendes, colores preferidos y dominio si lo tienes.
+							</p>
+							<div class="bg-white/10 border border-white/20 rounded-xl p-4">
+								<div class="text-sm text-gray-300">
+									⏰ <strong>Tiempo:</strong> 5 minutos
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<!-- Paso 2 -->
-					<div class="text-center relative">
+					<div class="text-center relative timeline-step scroll-animate scroll-fade-up">
 						<div class="mb-8 relative">
-							<div class="w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center mx-auto ">
+							<div class="w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center mx-auto timeline-number-2">
 								<span class="text-3xl text-white font-bold">2</span>
 							</div>
-							<!-- Línea conectora -->
-							<div class="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-brand-primary to-brand-success"></div>
 						</div>
-						<h3 class="text-2xl font-bold text-white mb-4">
-							Nosotros creamos
-						</h3>
-						<p class="text-gray-300 mb-6">
-							Nuestro equipo diseña y programa tu tienda completa. 
-							Te enviamos previews para que apruebes antes de publicar.
-						</p>
-						<div class="bg-white/10 border border-white/20 rounded-xl p-4">
-							<div class="text-sm text-gray-300">
-								⏰ <strong>Tiempo:</strong> 12-24 horas
+						<div class="timeline-content-2">
+							<h3 class="text-2xl font-bold text-white mb-4">
+								Nosotros creamos
+							</h3>
+							<p class="text-gray-300 mb-6">
+								Nuestro equipo diseña y programa tu tienda completa. 
+								Te enviamos previews para que apruebes antes de publicar.
+							</p>
+							<div class="bg-white/10 border border-white/20 rounded-xl p-4">
+								<div class="text-sm text-gray-300">
+									⏰ <strong>Tiempo:</strong> 12-48 horas
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<!-- Paso 3 -->
-					<div class="text-center">
+					<div class="text-center timeline-step scroll-animate scroll-fade-right">
 						<div class="mb-8">
-							<div class="w-24 h-24 bg-brand-success rounded-full flex items-center justify-center mx-auto ">
+							<div class="w-24 h-24 bg-brand-success rounded-full flex items-center justify-center mx-auto timeline-number-3">
 								<span class="text-3xl text-white font-bold">3</span>
 							</div>
 						</div>
-						<h3 class="text-2xl font-bold text-white mb-4">
-							Empiezas a vender
-						</h3>
-						<p class="text-gray-300 mb-6">
-							Recibís las credenciales de tu tienda, agregás productos y 
-							¡Ya estás vendiendo online! Con soporte para cualquier duda.
-						</p>
-						<div class="bg-white/10 border border-white/20 rounded-xl p-4">
-							<div class="text-sm text-gray-300">
-								⏰ <strong>Tiempo:</strong> Inmediato
+						<div class="timeline-content-3">
+							<h3 class="text-2xl font-bold text-white mb-4">
+								Empiezas a vender
+							</h3>
+							<p class="text-gray-300 mb-6">
+								Recibes las credenciales de tu tienda, compartes tu link y 
+								¡Ya estás vendiendo online! Con soporte para cualquier duda.
+							</p>
+							<div class="bg-white/10 border border-white/20 rounded-xl p-4">
+								<div class="text-sm text-gray-300">
+									⏰ <strong>Tiempo:</strong> Inmediato
+								</div>
 							</div>
 						</div>
 					</div>
@@ -642,7 +642,7 @@ import '../styles/global.css';
 						<span class="text-gray-400">→</span>
 						<div class="flex items-center gap-2">
 							<span class="w-3 h-3 bg-brand-success rounded-full"></span>
-							<span class="text-white text-sm font-bold">24h después vendés</span>
+							<span class="text-white text-sm font-bold">48h después vendés</span>
 						</div>
 					</div>
 				</div>
@@ -653,7 +653,7 @@ import '../styles/global.css';
 						🚀 Empezar ahora mismo
 					</Button>
 					<p class="text-gray-400 text-sm mt-4">
-						Sin permanencia • Garantía de 30 días • Soporte incluido
+						Sin permanencia • Garantízado • Soporte incluido
 					</p>
 				</div>
 			</div>
@@ -663,31 +663,31 @@ import '../styles/global.css';
 		<section id="afiliados" class="py-24 relative">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-animate scroll-title">
 						Genera ingresos siendo afiliado
 					</h2>
-					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
-						Gana 40% de comisión por cada cliente que referas • Pagos mensuales • Sin límites
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto scroll-animate scroll-fade-up">
+						Gana 20% de comisión por cada cliente que referas • Pagos mensuales • Sin límites
 					</p>
 				</div>
 				
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
 					<!-- Beneficios del afiliado -->
-					<div>
+					<div class="scroll-animate scroll-fade-left">
 						<div class="bg-white/10 border border-white/20 rounded-2xl p-8 mb-8">
 							<div class="text-center mb-8">
-								<div class="text-6xl font-black text-brand-success mb-2">40%</div>
+								<div class="text-6xl font-black text-brand-success mb-2">20%</div>
 								<div class="text-xl text-white font-bold">de comisión recurrente</div>
 								<div class="text-gray-300">por cada cliente referido</div>
 							</div>
 							
 							<div class="grid grid-cols-2 gap-4 text-center">
 								<div>
-									<div class="text-2xl font-bold text-white">$48k</div>
+									<div class="text-2xl font-bold text-white">$85.000</div>
 									<div class="text-sm text-gray-300">Plan Básico</div>
 								</div>
 								<div>
-									<div class="text-2xl font-bold text-white">$112k</div>
+									<div class="text-2xl font-bold text-white">$120.000</div>
 									<div class="text-sm text-gray-300">Plan Plus</div>
 								</div>
 							</div>
@@ -700,10 +700,10 @@ import '../styles/global.css';
 								</div>
 								<div>
 									<h3 class="text-lg font-semibold text-white mb-2">
-										Comisión recurrente de por vida
+										Comisión recurrente de tus referidos 
 									</h3>
 									<p class="text-gray-300">
-										Ganas el 40% todos los meses mientras tu referido mantenga activo su plan. 
+										Ganas el 20% todos los meses mientras tu referido mantenga activo su plan. 
 										Sin límite de tiempo.
 									</p>
 								</div>
@@ -742,7 +742,7 @@ import '../styles/global.css';
 					</div>
 					
 					<!-- Calculadora de ganancias -->
-					<div class="bg-white/10 border border-white/20 rounded-2xl p-8">
+					<div class="bg-white/10 border border-white/20 rounded-2xl p-8 scroll-animate scroll-fade-right">
 						<h3 class="text-2xl font-bold text-white mb-6 text-center">
 							Calculadora de ganancias
 						</h3>
@@ -750,7 +750,7 @@ import '../styles/global.css';
 						<div class="space-y-6">
 							<div class=" border border-white/20 rounded-xl p-6">
 								<div class="text-center mb-4">
-									<div class="text-sm text-gray-300 mb-2">Si referes solo...</div>
+									<div class="text-sm text-gray-300 mb-2">Si refieres solo...</div>
 									<div class="text-3xl font-bold text-white">5 clientes</div>
 									<div class="text-sm text-gray-300">por mes</div>
 								</div>
@@ -758,17 +758,17 @@ import '../styles/global.css';
 								<div class="grid grid-cols-2 gap-4 text-center">
 									<div>
 										<div class="text-lg font-bold text-astro-blue">3 Básicos</div>
-										<div class="text-sm text-gray-300">$144k/mes</div>
+										<div class="text-sm text-gray-300">$51.000/mes</div>
 									</div>
 									<div>
 										<div class="text-lg font-bold text-brand-success">2 Plus</div>
-										<div class="text-sm text-gray-300">$224k/mes</div>
+										<div class="text-sm text-gray-300">$240.000/mes</div>
 									</div>
 								</div>
 								
 								<div class="border-t border-white/20 mt-4 pt-4">
 									<div class="text-center">
-										<div class="text-2xl font-bold text-brand-success">$368k</div>
+										<div class="text-2xl font-bold text-brand-success">$291.000</div>
 										<div class="text-sm text-gray-300">ingresos mensuales recurrentes</div>
 									</div>
 								</div>
@@ -776,7 +776,7 @@ import '../styles/global.css';
 							
 							<div class="text-center">
 								<div class="text-white font-bold mb-2">En 1 año serían:</div>
-								<div class="text-4xl font-black text-brand-success">$4.4M</div>
+								<div class="text-4xl font-black text-brand-success">$3.492.000</div>
 								<div class="text-sm text-gray-400">Solo con 5 referencias mensuales</div>
 							</div>
 						</div>
@@ -828,7 +828,7 @@ import '../styles/global.css';
 								3. Empiezas a ganar
 							</h4>
 							<p class="text-gray-300 text-sm">
-								Recibe tu link único y material promocional para empezar
+								Recibe tu link único y credenciales para tu panel de referidos
 							</p>
 						</div>
 					</div>
@@ -855,7 +855,7 @@ import '../styles/global.css';
 						<div class="text-gray-300">Tiendas creadas</div>
 					</div>
 					<div class="text-center">
-						<div class="text-4xl font-black text-astro-blue mb-2">24h</div>
+						<div class="text-4xl font-black text-brand-success mb-2">36Hrs</div>
 						<div class="text-gray-300">Tiempo promedio</div>
 					</div>
 					<div class="text-center">
@@ -868,87 +868,313 @@ import '../styles/global.css';
 					</div>
 				</div>
 				
-				<!-- Testimonios -->
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-					<!-- Testimonio 1 -->
-					<div class="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-brand-success/30 transition-all duration-300">
-						<div class="flex items-center mb-4">
-							<div class="w-12 h-12 bg-brand-success rounded-full flex items-center justify-center text-white font-bold">
-								M
+				<!-- Testimonios con Marquesina Dual -->
+				<div class="testimonials-dual-marquee">
+					<!-- Primera fila: Derecha a Izquierda -->
+					<div class="testimonials-marquee">
+						<div class="testimonials-track testimonials-track-rtl">
+							<!-- Primera serie de testimonios -->
+							<div class="testimonials-set">
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-brand-success rounded-full flex items-center justify-center text-white font-bold">
+											M
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">María González</div>
+											<div class="text-sm text-gray-300">Ropa femenina - Medellín</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"En 18 horas mi tienda estaba funcionando perfectamente. 
+										Ya llevo 3 meses vendiendo sin problemas y el soporte técnico es increíble. 
+										Definitivamente la mejor decisión para mi negocio."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+											D
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Diego Herrera</div>
+											<div class="text-sm text-gray-300">Tecnología - Barranquilla</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"Intenté crear mi tienda durante 6 meses sin éxito. 
+										Con Ecomerciante en 24 horas todo estaba listo y funcionando. 
+										La diferencia de profesionalismo es increíble."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold">
+											S
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Sofía Ramírez</div>
+											<div class="text-sm text-gray-300">Cosméticos - Pereira</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"El panel administrativo es súper fácil de usar. Actualizo productos 
+										desde mi celular y las ventas llegan automáticamente. 10/10."
+									</p>
+								</div>
 							</div>
-							<div class="ml-4">
-								<div class="font-semibold text-white">María González</div>
-								<div class="text-sm text-gray-300">Ropa femenina - Medellín</div>
+
+							<!-- Serie duplicada para loop infinito -->
+							<div class="testimonials-set">
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-brand-success rounded-full flex items-center justify-center text-white font-bold">
+											M
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">María González</div>
+											<div class="text-sm text-gray-300">Ropa femenina - Medellín</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"En 18 horas mi tienda estaba funcionando perfectamente. 
+										Ya llevo 3 meses vendiendo sin problemas y el soporte técnico es increíble. 
+										Definitivamente la mejor decisión para mi negocio."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+											D
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Diego Herrera</div>
+											<div class="text-sm text-gray-300">Tecnología - Barranquilla</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"Intenté crear mi tienda durante 6 meses sin éxito. 
+										Con Ecomerciante en 24 horas todo estaba listo y funcionando. 
+										La diferencia de profesionalismo es increíble."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold">
+											S
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Sofía Ramírez</div>
+											<div class="text-sm text-gray-300">Cosméticos - Pereira</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"El panel administrativo es súper fácil de usar. Actualizo productos 
+										desde mi celular y las ventas llegan automáticamente. 10/10."
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="text-yellow-400 mb-3">★★★★★</div>
-						<p class="text-gray-300">
-							"¡No podía creer que en 18 horas tenía mi tienda funcionando! 
-							Ya llevo 3 meses vendiendo y el soporte es increíble. 
-							Lo mejor: no cobran comisión por venta."
-						</p>
 					</div>
-					
-					<!-- Testimonio 2 -->
-					<div class="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-brand-primary/30 transition-all duration-300">
-						<div class="flex items-center mb-4">
-							<div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold">
-								C
+
+					<!-- Segunda fila: Izquierda a Derecha -->
+					<div class="testimonials-marquee">
+						<div class="testimonials-track testimonials-track-ltr">
+							<!-- Primera serie de testimonios -->
+							<div class="testimonials-set">
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold">
+											C
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Carlos Ruiz</div>
+											<div class="text-sm text-gray-300">Suplementos - Bogotá</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"Intenté con Shopify por 2 meses y gasté más de $1M sin resultados. 
+										Con Ecomerciante en 1 día ya estaba vendiendo. Excelente inversión."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-brand-success rounded-full flex items-center justify-center text-white font-bold">
+											A
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Ana Torres</div>
+											<div class="text-sm text-gray-300">Accesorios - Cali</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"Llevaba años vendiendo solo por Instagram y Facebook. 
+										Ahora con mi tienda profesional las ventas se triplicaron. 
+										Los clientes confían más y compran sin dudar tanto."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full flex items-center justify-center text-white font-bold">
+											R
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Roberto Silva</div>
+											<div class="text-sm text-gray-300">Herramientas - Pasto</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"La velocidad de carga de mi nueva tienda es impresionante. 
+										Mis clientes ya no abandonan el carrito como antes. 
+										Las ventas se duplicaron en el primer mes."
+									</p>
+								</div>
 							</div>
-							<div class="ml-4">
-								<div class="font-semibold text-white">Carlos Ruiz</div>
-								<div class="text-sm text-gray-300">Suplementos - Bogotá</div>
+
+							<!-- Serie duplicada para loop infinito -->
+							<div class="testimonials-set">
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white font-bold">
+											C
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Carlos Ruiz</div>
+											<div class="text-sm text-gray-300">Suplementos - Bogotá</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"Intenté con Shopify por 2 meses y gasté más de $1M sin resultados. 
+										Con Ecomerciante en 1 día ya estaba vendiendo. Excelente inversión."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-brand-success rounded-full flex items-center justify-center text-white font-bold">
+											A
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Ana Torres</div>
+											<div class="text-sm text-gray-300">Accesorios - Cali</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"Llevaba años vendiendo solo por Instagram y Facebook. 
+										Ahora con mi tienda profesional las ventas se triplicaron. 
+										Los clientes confían más y compran sin dudar tanto."
+									</p>
+								</div>
+
+								<div class="testimonial-card">
+									<div class="flex items-center mb-4">
+										<div class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full flex items-center justify-center text-white font-bold">
+											R
+										</div>
+										<div class="ml-4">
+											<div class="font-semibold text-white">Roberto Silva</div>
+											<div class="text-sm text-gray-300">Herramientas - Pasto</div>
+										</div>
+									</div>
+									<div class="text-yellow-400 mb-3">★★★★★</div>
+									<p class="text-gray-300">
+										"La velocidad de carga de mi nueva tienda es impresionante. 
+										Mis clientes ya no abandonan el carrito como antes. 
+										Las ventas se duplicaron en el primer mes."
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="text-yellow-400 mb-3">★★★★★</div>
-						<p class="text-gray-300">
-							"Intenté con Shopify por 2 meses y gasté más de $1M sin resultados. 
-							Con Ecomerciante en 1 día ya estaba vendiendo. 
-							Excelente inversión."
-						</p>
-					</div>
-					
-					<!-- Testimonio 3 -->
-					<div class="bg-white/10 border border-white/20 rounded-xl p-6 hover:border-brand-success/30 transition-all duration-300">
-						<div class="flex items-center mb-4">
-							<div class="w-12 h-12 bg-brand-success rounded-full flex items-center justify-center text-white font-bold">
-								A
-							</div>
-							<div class="ml-4">
-								<div class="font-semibold text-white">Ana Torres</div>
-								<div class="text-sm text-gray-300">Accesorios - Cali</div>
-							</div>
-						</div>
-						<div class="text-yellow-400 mb-3">★★★★★</div>
-						<p class="text-gray-300">
-							"El diseño quedó hermoso y profesional. 
-							Mis clientes piensan que contraté una agencia carísima. 
-							El soporte por WhatsApp es genial."
-						</p>
 					</div>
 				</div>
 				
-				<!-- Logos de confianza / Medios de pago -->
+				<!-- Logos de métodos de pago -->
 				<div class="text-center">
-					<h3 class="text-lg font-semibold text-white mb-8">
+					<h3 class="text-lg font-semibold text-white mb-8 mt-8">
 						Integramos con tus métodos de pago favoritos
 					</h3>
 					
-					<div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
-						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
-							<span class="text-white font-bold">💳 PSE</span>
-						</div>
-						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
-							<span class="text-white font-bold">💰 Nequi</span>
-						</div>
-						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
-							<span class="text-white font-bold">🏦 Daviplata</span>
-						</div>
-						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
-							<span class="text-white font-bold">💳 T. Crédito</span>
-						</div>
-						<div class="bg-white/10 border border-white/20 rounded-lg px-6 py-3">
-							<span class="text-white font-bold">💸 Efecty</span>
+					<!-- Marquesina infinita de logos -->
+					<div class="payment-logos-marquee overflow-hidden">
+						<div class="payment-logos-track">
+							<!-- Primera serie de logos -->
+							<div class="payment-logos-set">
+								<div class="payment-logo">
+									<img src="/images/logos/logo_mastercard.webp" alt="Mastercard" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_visa.webp" alt="Visa" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_bancolombia.webp" alt="Bancolombia" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_mercado_pago.webp" alt="Mercado Pago" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_sistecredito.webp" alt="Sistecredito" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/Logo_wompi.webp" alt="Wompi" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_addi.webp" alt="Addi" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_pse.webp" alt="PSE" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_nequi.webp" alt="Nequi" />
+								</div>
+							</div>
+							
+							<!-- Segunda serie de logos (duplicada para el efecto infinito) -->
+							<div class="payment-logos-set">
+								<div class="payment-logo">
+									<img src="/images/logos/logo_mastercard.webp" alt="Mastercard" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_visa.webp" alt="Visa" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_bancolombia.webp" alt="Bancolombia" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_mercado_pago.webp" alt="Mercado Pago" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_sistecredito.webp" alt="Sistecredito" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/Logo_wompi.webp" alt="Wompi" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_addi.webp" alt="Addi" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_pse.webp" alt="PSE" />
+								</div>
+								<div class="payment-logo">
+									<img src="/images/logos/logo_nequi.webp" alt="Nequi" />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -959,10 +1185,10 @@ import '../styles/global.css';
 		<section id="faq" class="py-24 relative">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-16">
-					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6 scroll-fade-up">
 						Preguntas frecuentes
 					</h2>
-					<p class="text-xl text-gray-300 max-w-3xl mx-auto">
+					<p class="text-xl text-gray-300 max-w-3xl mx-auto scroll-fade-up">
 						Resolvemos las dudas más comunes sobre nuestro servicio
 					</p>
 				</div>
@@ -1038,10 +1264,10 @@ import '../styles/global.css';
 		<!-- CTA Final -->
 		<section id="contacto" class="py-24">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-				<h2 class="text-4xl md:text-6xl font-black text-white mb-6">
+				<h2 class="text-4xl md:text-6xl font-black text-white mb-6 scroll-fade-up">
 					¿Listo para empezar?
 				</h2>
-				<p class="text-xl md:text-2xl text-gray-300 mb-8">
+				<p class="text-xl md:text-2xl text-gray-300 mb-8 scroll-fade-up">
 					Tu tienda online profesional te está esperando
 				</p>
 				
@@ -1091,3 +1317,101 @@ import '../styles/global.css';
 
 	<Footer />
 </Layout>
+
+<script>
+// Intersection Observer para animaciones de scroll
+document.addEventListener('DOMContentLoaded', function() {
+	// Configuración del observer
+	const observerOptions = {
+		root: null,
+		rootMargin: '-10% 0px -10% 0px', // Activa cuando el 10% del elemento es visible
+		threshold: 0.1
+	};
+
+	// Crear el observer
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('scroll-visible');
+				// Una vez animado, dejar de observar para performance
+				observer.unobserve(entry.target);
+			}
+		});
+	}, observerOptions);
+
+	// Seleccionar todos los elementos con clases de scroll
+	const scrollElements = document.querySelectorAll([
+		'.scroll-fade-up',
+		'.scroll-fade-in', 
+		'.scroll-scale-in',
+		'.scroll-slide-left',
+		'.scroll-slide-right',
+		'.scroll-stagger-1',
+		'.scroll-stagger-2', 
+		'.scroll-stagger-3',
+		'.scroll-stagger-4',
+		'.scroll-stagger-5',
+		'.scroll-stagger-6',
+		'.timeline-step',
+		'.timeline-content-1',
+		'.timeline-content-2',
+		'.timeline-content-3'
+	].join(', '));
+
+	// Observar cada elemento
+	scrollElements.forEach(element => {
+		observer.observe(element);
+	});
+
+	// ===== SMOOTH SCROLL MEJORADO PARA NAVBAR =====
+	function smoothScrollTo(target, duration = 1000) {
+		const startPosition = window.pageYOffset;
+		const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 80; // 80px offset para navbar
+		const distance = targetPosition - startPosition;
+		let startTime = null;
+
+		// Función de easing suave
+		function easeInOutQuad(t, b, c, d) {
+			t /= d / 2;
+			if (t < 1) return c / 2 * t * t + b;
+			t--;
+			return -c / 2 * (t * (t - 2) - 1) + b;
+		}
+
+		function animation(currentTime) {
+			if (startTime === null) startTime = currentTime;
+			const timeElapsed = currentTime - startTime;
+			const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+			window.scrollTo(0, run);
+			if (timeElapsed < duration) requestAnimationFrame(animation);
+		}
+
+		// Verificar preferencias de movimiento
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		
+		if (prefersReducedMotion) {
+			// Scroll inmediato para usuarios que prefieren movimiento reducido
+			window.scrollTo(0, targetPosition);
+		} else {
+			// Smooth scroll animado
+			requestAnimationFrame(animation);
+		}
+	}
+
+	// Aplicar smooth scroll a todos los enlaces del navbar
+	const navbarLinks = document.querySelectorAll('header nav a[href^="#"], header .btn-primary[href^="#"]');
+	
+	navbarLinks.forEach(link => {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			
+			const targetId = this.getAttribute('href');
+			const targetElement = document.querySelector(targetId);
+			
+			if (targetElement) {
+				smoothScrollTo(targetElement, 800); // 800ms de duración
+			}
+		});
+	});
+});
+</script>
